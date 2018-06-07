@@ -1,0 +1,75 @@
+<div class="uk-padding">
+<div class="uk-card uk-card-default ">
+    <div class="uk-card-header">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-border-circle" width="40" height="40" src="assets/image/pers.jpg">
+            </div>
+            <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">email:{{email}}</h3>
+                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+            </div>
+        </div>
+    </div>
+    <div class="uk-card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="uk-card-footer">
+        <a href="#" class="uk-button uk-button-text"uk-toggle="target: #modal-example">edit</a>
+
+        
+        
+
+
+<!-- This is the modal -->
+<div id="modal-example" uk-modal>
+<div class="uk-modal-dialog uk-modal-body">
+
+
+<fieldset class="uk-fieldset">
+
+<div class="uk-margin">
+<input class="uk-input" type="text" placeholder="name" name="name" [(ngModel)]="data.name">
+</div>
+
+<div class="uk-margin">
+    <input class="uk-input" type="text" placeholder="age " name="age" [(ngModel)]="data.age">
+</div>
+
+<div class="uk-margin">
+    <input class="uk-input" type="text" placeholder="phone" name="phone" [(ngModel)]="data.phone"> 
+</div>
+<div class="uk-margin">
+    <input class="uk-input" type="text" placeholder="address"  name="address" [(ngModel)]="data.address">
+</div>
+
+
+<div class="uk-margin">
+    <input class="uk-input" type="text" placeholder="city"name="city" [(ngModel)]="data.city">
+</div>
+
+
+<div class="uk-margin">
+    <input class="uk-input" type="text" placeholder="job"name="job" [(ngModel)]="data.job">
+</div>
+
+
+
+
+
+</fieldset>
+
+<p class="uk-text-right">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">  exit</button>
+        <button class="uk-button uk-button-primary" type="button " (click)="onEdit()" >Save</button>
+    </p>
+</div>
+</div>
+
+</div>
+
+
+
+  
+</div>
+</div>
